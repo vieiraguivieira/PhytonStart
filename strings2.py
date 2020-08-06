@@ -2,23 +2,14 @@
 
 parrot = "Norwegian Blue"
 
-print(parrot[0:6])  # Norweg - the last caracther is not included
-print(parrot[3:5])
-print(parrot[0:9])
-print(parrot[:9])
+print(parrot[0:6:2])  #Nre - 2 by 2
+print(parrot[0:6:3])  #Nw - 3 by 3
 
-print(parrot[10:14])
-print(parrot[10:])
+number = "9,223;372:036 853,775;807"
+separators = number[1::4]
+print("Separators: " + separators)
 
-print(parrot[:6])
-print(parrot[6:])
+values = "".join(char if char not in separators else " " for char in number).split()
+print([int(val) for val in values])
 
-print(parrot[:6] + parrot[6:])
-
-print(parrot[:])
-
-letters = "abcdefghijklmnoprstuvwxyz"
-
-print(letters[6] + letters[-6] + letters[8] + letters[11] + letters[7] + letters[4] + letters[-9]
-      + letters[12] + letters[4])
 
