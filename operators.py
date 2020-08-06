@@ -5,17 +5,9 @@ print(a + b)
 print(a - b)
 print(a * b)
 print(a / b)
-print(a // b)
-print(a % b)
+print(a // b) #integer division, rounded towards minus infinity
+print(a % b) #the raminder after integer division
 
 print()
 
-for i in range(1, a//b):
-    print(i)
-
-i = 1
-print(i)
-i = 2
-print(i)
-i = 3
-print(i)
+print(a + b / 3 - 4 * 12)
